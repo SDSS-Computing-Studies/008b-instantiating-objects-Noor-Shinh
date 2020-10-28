@@ -113,7 +113,7 @@ while x!=2:
         y=input("Which pet")
         for i in pets:
             if i.name==y:
-                print(Vet.displayPet[i])
+                print(i.displayPet())
             else:
                 y=input("Try entering the name again")
         x=1
