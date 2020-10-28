@@ -90,10 +90,12 @@ class Vet:
         self.birthdate=input("Enter your pet's birthdate, expressed as year-month-date")
 
     def displayPet(self):
-        output=self.animal+" "+self.breed+" "+self.name+" "+self.owner+" "+self.birthdate
-        outputlen=len(output)
+        output1=self.name+" "+self.animal
+        output2=self.breed+" is owned by "+self.owner
+        outputlen=len(output2)
         print(outputlen*"=")
-        print(output)
+        print(output1)
+        print(output2)
         print(outputlen*"=")
     
 pets=[]
@@ -111,11 +113,10 @@ while x!=2:
         y=input("Which pet")
         for i in pets:
             if i.name==y:
-                print(i.name+" "+i.animal)
-                print(i.breed+"is owned by"+i.owner)
+                print(Vet.displayPet[i])
             else:
                 y=input("Try entering the name again")
         x=1
     elif z==3:
         print("Thank you for visiting")
-        x=1
+        x=2 
