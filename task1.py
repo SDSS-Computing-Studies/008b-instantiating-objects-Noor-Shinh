@@ -111,8 +111,7 @@ while x!=2:
         for i in pets:
             if i.name==y:
                 print(i.displayPet())
-            else:
-                y=input("Pet not Found,try again")
+            
         x=1
     elif z==3:
         print("Thank you for visiting")
