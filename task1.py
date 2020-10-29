@@ -91,12 +91,10 @@ class Vet:
 
     def displayPet(self):
         output1=self.name+" "+self.animal
-        output2=self.breed+" is owned by "+self.owner
-        outputlen=len(output2)
-        print(outputlen*"=")
+        output2=self.breed+" is owned by "+self.owner 
         print(output1)
         print(output2)
-        print(outputlen*"=")
+        
     
 pets=[]
 x=1
