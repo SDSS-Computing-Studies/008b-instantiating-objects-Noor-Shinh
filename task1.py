@@ -91,7 +91,7 @@ class Vet:
 
     def displayPet(self):
         output1=self.name+" "+self.animal
-        output2=self.breed+" is owned by "+self.owner 
+        output2=self.breed+" is owned by "+self.owner
         print(output1)
         print(output2)
         
@@ -105,7 +105,6 @@ while x!=2:
     z=int(input(""))
     if z==1:
         pets.append(Vet())
-        print(pets)
         x=1
     elif z==2:
         y=input("Which pet")
@@ -113,7 +112,7 @@ while x!=2:
             if i.name==y:
                 print(i.displayPet())
             else:
-                y=input("Try entering the name again")
+                y=input("Pet not Found,try again")
         x=1
     elif z==3:
         print("Thank you for visiting")
